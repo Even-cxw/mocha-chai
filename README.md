@@ -11,6 +11,8 @@
   - mocha函数钩子
   - 异步测试  测试套件设置：this.timeout(10000);
   - node-fetch第三方库
+3. test03
+  - 浏览器中运行测试脚本，....mocha init 文件名
 
 
 #### mocha命令
