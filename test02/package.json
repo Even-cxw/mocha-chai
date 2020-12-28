@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "test --recursive"
+    "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --recursive"
   },
   "author": "",
   "license": "ISC",

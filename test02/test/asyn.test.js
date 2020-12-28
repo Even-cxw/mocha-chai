@@ -24,7 +24,7 @@ describe('异步测试风格一', function() {
 // 在不使用done的时候，不可以写上去；不然会报错
 // 设置超时时间
 describe('异步测试风格二',function() {
-  this.timeout(10000);
+  // this.timeout(10000);
   it.only('测试二',async function() {
     var json = await fetch('https://api.github.com')
     .then(function(res) {
