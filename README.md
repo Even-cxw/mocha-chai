@@ -8,4 +8,12 @@
   - npm升级到指定版本 npm install -g npm@5.6.0
 2. test02
   - only\skip : it.only()/ describe.only() :只执行一个，可以多个only
-  
+  - mocha函数钩子
+  - 异步测试  测试套件设置：this.timeout(10000);
+  - node-fetch第三方库
+
+
+#### mocha命令
+1. --recursive： 行test下所有的js文件，深层次检索
+2. --timeout 5000 : 设置超时时间为5000毫秒 
+3. --slow 5000 : 设置异步高亮显示时长
