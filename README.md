@@ -13,7 +13,7 @@
   - node-fetch第三方库
 3. test03
   - 浏览器中运行测试脚本，....mocha init 文件名
-
+  - es6 模块化构建无法走通
 
 #### mocha命令
 1. --recursive： 行test下所有的js文件，深层次检索
