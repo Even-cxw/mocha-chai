@@ -16,7 +16,7 @@
 3. test03
   - 浏览器中运行测试脚本，....mocha init 文件名
 4. test04
-  -
+  - istanbul 插件 
 
 #### mocha命令
 1. --recursive： 行test下所有的js文件，深层次检索
@@ -31,3 +31,19 @@
   - ast(Abstract Syntax Tree):  是一种标准的树结构，将函数等拆分成对象的形式
   - @babel/cli: 命令集成工具
   - @babel/preset-env: es6转码核心
+
+#### 代码覆盖率
+- 行覆盖率(line coverage) : 是否每一行都执行？
+- 函数覆盖率(function coverage)：是否每个函数都执行？
+- 分支覆盖率(branch coverage)：是否每个if代码块都执行？
+- 语句覆盖率(statement coverage)：是否每个语句都执行？
+
+
+#### 记忆代码
+document.scrollingElement.scrollTop = 0;
+window.scrollTo(0,0);
+
+document.scrollingElement.scrollTop = 0;
+window.scrollTo(0,0)
+document.addEventListener('focusout', ()=> {})
+document.addEventListener('focusout', ()=> {})
