@@ -16,8 +16,21 @@
 3. test03
   - 浏览器中运行测试脚本，....mocha init 文件名
 4. test04
-  - istanbul 插件 
+  - istanbul 插件 : `` npm install istanbul -D``
+  - 插件覆盖率执行命令:
+    > `` node_modules/.bin/istanbul cover src/app.js``
+    
+    >  会生成coverage文件，里面可以看html覆盖率报表
 
+    > 可写成 ``npm run check-over`` 在package.json上有配置
+  - 覆盖率设置门槛： 
+    > ``node_modules/.bin/istanbul check-coverage --statement 70``
+    
+    > 设置覆盖率为70是的门槛，若未过则报错
+  - 与mocha的整合应用 **注意测试文件**
+    > ``node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- test/app.test.js``
+
+    > 可写成 ``npm run check-mocha`` 在package.json上有配置
 #### mocha命令
 1. --recursive： 行test下所有的js文件，深层次检索
 2. --timeout 5000 : 设置超时时间为5000毫秒 
@@ -33,7 +46,9 @@
   - @babel/preset-env: es6转码核心
 
 #### 代码覆盖率
-- 行覆盖率(line coverage) : 是否每一行都执行？
-- 函数覆盖率(function coverage)：是否每个函数都执行？
-- 分支覆盖率(branch coverage)：是否每个if代码块都执行？
 - 语句覆盖率(statement coverage)：是否每个语句都执行？
+- 分支覆盖率(branch coverage)：是否每个if代码块都执行？
+- 函数覆盖率(function coverage)：是否每个函数都执行？
+- 行覆盖率(line coverage) : 是否每一行都执行？
+
+
