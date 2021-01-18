@@ -11,7 +11,8 @@
   - mocha函数钩子
   - 异步测试  测试套件设置：this.timeout(10000);
   - node-fetch第三方库
-  - mochawesome 插件，生成漂亮的html测试报表
+  - mochawesome 插件，生成漂亮的html测试报表 ``node_modules/.bin/mocha --reporter mochawesome --recursive``
+    > 或者执行命令 `` npm run test `` 在package.json上有配置
   - mocha配置命令文件 mocha.opts 未生效
 3. test03
   - 浏览器中运行测试脚本，....mocha init 文件名
@@ -31,6 +32,12 @@
     > ``node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- test/app.test.js``
 
     > 可写成 ``npm run check-mocha`` 在package.json上有配置
+
+5. test05
+  - selenium-webdirver 插件  自动化测试框架；
+  > 下载 `` npm i selenium-webdriver -D``
+
+  > 
 #### mocha命令
 1. --recursive： 行test下所有的js文件，深层次检索
 2. --timeout 5000 : 设置超时时间为5000毫秒 
